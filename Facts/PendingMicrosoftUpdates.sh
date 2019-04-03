@@ -1,16 +1,16 @@
 #!/bin/bash
 
 #Fact requires 'Script Access to MSU' MDM Profile
-folder="fact-cache"
-file="$folder/pending_ms_updates"
+FOLDER="fact-cache"
+FILE="$FOLDER/pending_ms_updates"
 
-mkdir -p $folder;
+mkdir -p $FOLDER;
 
 username=$(/usr/bin/python -c 'from SystemConfiguration import SCDynamicStoreCopyConsoleUser; import sys; username = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0]; username = [username,""][username in [u"loginwindow", None, u""]]; sys.stdout.write(username + "\n");')
 
 if [ "$username" == "" ]; then
-   read -d $'\x04' cached < "$file"
-   echo "Pending Microsoft Updates: $cached (cached)"
+   read -d $'\x04' CACHED < "$FILE"
+   echo "Pending Microsoft Updates: $CACHED (cached)"
    exit 0
 fi
 
@@ -18,4 +18,4 @@ PENDING_UPDATES=$(sudo -u "$username" /Library/Application\ Support/Microsoft/MA
 
 echo "Pending Microsoft Updates: $PENDING_UPDATES"
 
-echo $PENDING_UPDATES > $file
+echo $PENDING_UPDATES > $FILE

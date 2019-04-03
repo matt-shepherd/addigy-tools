@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>Applications</key>
+			<dict>
+				<key>/Applications/Microsoft Excel.app</key>
+				<dict>
+					<key>Application ID</key>
+					<string>XCEL2019</string>
+					<key>LCID</key>
+					<integer>1033</integer>
+				</dict>
+				<key>/Applications/Microsoft OneNote.app</key>
+				<dict>
+					<key>Application ID</key>
+					<string>ONMC2019</string>
+					<key>LCID</key>
+					<integer>1033</integer>
+				</dict>
+				<key>/Applications/Microsoft Outlook.app</key>
+				<dict>
+					<key>Application ID</key>
+					<string>OPIM2019</string>
+					<key>LCID</key>
+					<integer>1033</integer>
+				</dict>
+				<key>/Applications/Microsoft Word.app</key>
+				<dict>
+					<key>Application ID</key>
+					<string>MSWD2019</string>
+					<key>LCID</key>
+					<integer>1033</integer>
+				</dict>
+				<key>/Applications/Skype for Business.app</key>
+				<dict>
+					<key>Application ID</key>
+					<string>MSFB2019</string>
+					<key>LCID</key>
+					<integer>1033</integer>
+				</dict>
+				<key>/Library/Application Support/Microsoft/MAU2.0/Microsoft AutoUpdate.app</key>
+				<dict>
+					<key>Application ID</key>
+					<string>MSau03</string>
+					<key>LCID</key>
+					<integer>1033</integer>
+				</dict>
+			</dict>
+			<key>HowToCheck</key>
+			<string>AutomaticDownload</string>
+			<key>PayloadDescription</key>
+			<string>Configures Microsoft AutoUpdate settings</string>
+			<key>PayloadDisplayName</key>
+			<string>Microsoft AutoUpdate</string>
+			<key>PayloadIdentifier</key>
+			<string>MCXToProfile.67ad2621-b510-4060-b971-7f7cf51506c9.alacarte.customsettings.c00e472d-4cb4-4231-8fd4-c7fa866efc00</string>
+			<key>PayloadOrganization</key>
+			<string></string>
+			<key>PayloadType</key>
+			<string>com.microsoft.autoupdate2</string>
+			<key>PayloadUUID</key>
+			<string>c00e472d-4cb4-4231-8fd4-c7fa866efc00</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Enable Automatic Download and Installation of Microsoft Office 2019 Updates</string>
+	<key>PayloadDisplayName</key>
+	<string>Enable Automatic Download and Installation of Microsoft Office 2019 Updates</string>
+	<key>PayloadIdentifier</key>
+	<string>com.company.profile.EnableAutomaticDownloadAndInstall</string>
+	<key>PayloadOrganization</key>
+	<string>Purebyte Ltd</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>67ad2621-b510-4060-b971-7f7cf51506c9</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
