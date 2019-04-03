@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Fact requires 'Script Access to MSU' MDM Profile
 folder="fact-cache"
 file="$folder/pending_ms_updates"
 
