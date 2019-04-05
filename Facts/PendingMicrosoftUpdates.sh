@@ -10,12 +10,14 @@ username=$(/usr/bin/python -c 'from SystemConfiguration import SCDynamicStoreCop
 
 if [ "$username" == "" ]; then
    read -d $'\x04' CACHED < "$FILE"
-   echo "Pending Microsoft Updates: $CACHED (cached)"
+   #echo "Pending Microsoft Updates: $CACHED (cached)"
+   echo $CACHED
    exit 0
 fi
 
 PENDING_UPDATES=$(sudo -u "$username" /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app/Contents/MacOS/msupdate --list | grep -c '  ')
 
-echo "Pending Microsoft Updates: $PENDING_UPDATES"
+#echo "Pending Microsoft Updates: $PENDING_UPDATES"
+echo $PENDING_UPDATES
 
 echo $PENDING_UPDATES > $FILE
